@@ -7,7 +7,7 @@ Console.WriteLine("Hello, World!");
 
 
 
-IPersonDatastructure collection = new PersonArray();
+IPersonDatastructure collection = new PersonHashSet();
 
 collection.Add(new Person(1, "peter"));
 collection.Add(new Person(2, "anders"));
