@@ -1,11 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using ClassDemoDatastructuresApp;
 using DatastructuresLib.datastructures;
 using DatastructuresLib.model;
 
-Console.WriteLine("Hello, World!");
 
 
 
+/*
 
 IPersonDatastructure collection = new PersonHashSet();
 
@@ -34,4 +35,41 @@ catch(KeyNotFoundException knfe)
 {
     Console.WriteLine(knfe.Message);
 }
+
+*/
+
+/*
+ * Noget med equals
+
+Console.WriteLine();
+Console.WriteLine(" ===> Equals <====");
+Console.WriteLine();
+Person p1 = new Person(5, "peter");
+Person p2 = new Person(5, "peter");
+Person p3 = p1;
+
+if (p1 == p2)
+{
+    Console.WriteLine("ja p1 og p2 er ens");
+}
+
+if (p1.Equals(p2))
+{
+    Console.WriteLine("ja p1 og p2 er ens");
+}
+
+if (p1 == p3)
+{
+    Console.WriteLine("ja p1 og p3 er ens");
+}
+
+Console.WriteLine("Hashcodes");
+Console.WriteLine("p1 " + p1.GetHashCode());
+Console.WriteLine("p2 " + p2.GetHashCode());
+Console.WriteLine("p3 " + p3.GetHashCode());
+
+*/
+
+Worker w = new Worker();
+w.Run();
 

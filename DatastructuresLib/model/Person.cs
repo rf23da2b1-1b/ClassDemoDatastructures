@@ -21,9 +21,50 @@ namespace DatastructuresLib.model
             Name = name;
         }
 
+
+     
+
+
         public override string ToString()
         {
             return $"{{{nameof(Id)}={Id.ToString()}, {nameof(Name)}={Name}}}";
         }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Person person &&
+                   Id == person.Id &&
+                   Name == person.Name;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Name);
+        }
+
+
+        /*
+   * Noget med equals og hashkodes
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
